@@ -1,5 +1,5 @@
 /*
-	Redable Trello 
+	Redable Trello 0.2
 	Forked from @MikoMagni
 	Adapted by @BelkinSergei
 */
@@ -128,20 +128,41 @@ input[type="submit"].primary:hover, input[type="button"].primary:hover, button.p
 	        box-shadow:none !important;
 }
 
-.header-btn:hover  {
-    background:#555555 !important;
+.header-btn.header-search {
+    background:#a59f9b !important;
     -webkit-box-shadow:none !important;
 	        box-shadow:none !important;
+}
+
+.header-btn:hover  {
+    background:#a59f9b !important;
+    -webkit-box-shadow:none !important;
+	box-shadow:none !important;
+	transition: background .15s ease-in-out;
+	-moz-transition: background .15s ease-in-out;
+	-webkit-transition: background .15s ease-in-out;
+	        
 }
 
 input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, textarea:focus {
-    border:1px solid #333333 !important;
+/*    border:1px solid #d3d3d3 !important;*/
     -webkit-box-shadow:none !important;
 	        box-shadow:none !important;
 }
 
+/* Search Button */
 #header-search input[type="text"] {
-    background:#ffffff !important;
+    background:#a59f9b !important;
+}
+
+#header-search input[type="text"]:hover {
+    background:#d9d3ce !important;
+    transition: background .25s ease-in-out;
+    -moz-transition: background .25s ease-in-out;
+    -webkit-transition: background .25s ease-in-out;
+}
+#header-search input[type="text"]:focus {
+	background:#d9d3ce !important;
 }
 
 .header-btn {
