@@ -82,6 +82,9 @@ input[type="submit"].primary:hover, input[type="button"].primary:hover, button.p
 .open-card-composer {
     background:#aaa !important;
 	color:rgb(194, 194, 194) !important;
+	transition: background .10s ease-in-out;
+	-moz-transition: background .10s ease-in-out;
+	-webkit-transition: background .10s ease-in-out;
     border-bottom-left-radius:6px !important;
     border-bottom-right-radius:6px !important;
     color:#ffffff !important;
