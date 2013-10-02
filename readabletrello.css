@@ -10,10 +10,12 @@ body{
 
 #board{
 	background:#f0f0f0 !important;
+	/*margin: 0 !important;
+	padding: 0 !important;*/
 }
 
 .board-canvas {
-	padding: 10px 10px !important;
+	/*padding: 10px 10px !important;*/
 	background:#f0f0f0 !important;
 }
 
@@ -33,10 +35,13 @@ body{
 }
 
 .list-card.selected, .list-card.active-card{
- /*   background:#f0f0f0 !important;*/
     background-color:rgba(0, 167, 255, 0.32) !important;
     color:#115dc4 !important;
+    transition: background .25s ease-in-out;
+     -moz-transition: background .25s ease-in-out;
+     -webkit-transition: background .25s ease-in-out;
 }
+
 
 .list-gradient-top, .list-gradient-bottom{
 	height:0 !important;
@@ -205,7 +210,10 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focu
 }
 
 /* Scrollbar */
-.fancy-scrollbar{-webkit-overflow-scrolling:touch}.fancy-scrollbar::-webkit-scrollbar{height:20px !important;width:4px !important;}
+.fancy-scrollbar{-webkit-overflow-scrolling:touch}.fancy-scrollbar::-webkit-scrollbar{
+height:10px !important;
+width:4px !important;
+}
 
 .fancy-scrollbar::-webkit-scrollbar-button:start:decrement,.fancy-scrollbar::-webkit-scrollbar-button:end:increment{background:transparent;display:none}
 
@@ -236,8 +244,11 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focu
 }
 .fancy-scrollbar::-webkit-scrollbar-thumb:vertical,.fancy-scrollbar::-webkit-scrollbar-thumb:horizontal{
     background:#ddd !important;
-    border-radius:50px !important;
+    border-radius:10px !important;
     display:block;
     height:30px
 }
 
+.fancy-scrollbar::-webkit-scrollbar-thumb:vertical:hover,.fancy-scrollbar::-webkit-scrollbar-thumb:horizontal:hover{
+    background: #d3d3d3 !important;
+}
